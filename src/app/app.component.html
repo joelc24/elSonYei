@@ -3,8 +3,11 @@
     <ion-menu contentId="main-content" type="overlay">
       <ion-content>
         <ion-list id="inbox-list">
-          <ion-list-header>Inbox</ion-list-header>
-          <ion-note>hi@ionicframework.com</ion-note>
+          <ion-avatar >
+            <img src="../assets/img/image-1629493161822.jpeg">
+          </ion-avatar>
+          <ion-list-header>elSonYei</ion-list-header>
+          <ion-note>https://booyah.live/studio/30128357</ion-note>
 
           <ion-menu-toggle auto-hide="false" *ngFor="let p of appPages; let i = index">
             <ion-item routerDirection="root" [routerLink]="[p.url]" lines="none" detail="false" routerLinkActive="selected">
@@ -17,9 +20,9 @@
         <ion-list id="labels-list">
           <ion-list-header>Labels</ion-list-header>
 
-          <ion-item *ngFor="let label of labels" lines="none">
-            <ion-icon slot="start" ios="bookmark-outline" md="bookmark-sharp"></ion-icon>
-            <ion-label>{{ label }}</ion-label>
+          <ion-item *ngFor="let personalizado of personalizados" lines="none">
+            <ion-icon slot="start" ios="cube-outline" md="cube-sharp"></ion-icon>
+            <ion-label>{{ personalizado }}</ion-label>
           </ion-item>
         </ion-list>
       </ion-content>
